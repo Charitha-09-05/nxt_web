@@ -1,0 +1,476 @@
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+.video-background {
+    position: relative;
+    height: 100vh;
+    /* Full viewport height */
+    overflow: hidden;
+}
+
+video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* or 'contain' based on your preference */
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.gradient-overlay {
+    position: absolute;
+    /* Position it absolutely */
+    top: 0;
+    /* Start at the top */
+    left: 0;
+    /* Start at the left */
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    background: linear-gradient(270deg, #0000, #16284521 28%, #1e293b 75%);
+}
+
+.container {
+    padding: 50px;
+}
+
+.image {
+    margin-top: 20px;
+}
+
+/* Container for the scrolling content */
+.scroll-up-wrapper {
+    text-align: left;
+    position: relative;
+    height: 150px;
+    /* Adjust this based on heading size */
+    overflow: hidden;
+
+    background-color: transparent;
+
+}
+
+/* Styling for each heading */
+.scrolling-heading {
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    /* Start from below */
+    animation: scroll-up 12s ease-in-out infinite;
+    /* Total animation duration */
+}
+
+@keyframes scroll-up {
+    0% {
+        top: 100%;
+        /* Start below the container */
+    }
+
+    10% {
+        top: 0%;
+        /* Headings fully enter the view */
+    }
+
+    30% {
+        top: 0%;
+        /* Stay visible */
+    }
+
+    40% {
+        top: -100%;
+        /* Scroll out of view */
+    }
+
+    100% {
+        top: -100%;
+        /* Fully off screen */
+    }
+}
+
+/* Add delays to ensure headings scroll one after another */
+.scrolling-heading:nth-child(1) {
+    animation-delay: 0s;
+    /* First heading starts immediately */
+}
+
+.scrolling-heading:nth-child(2) {
+    animation-delay: 2s;
+    /* Second heading starts after 2 seconds */
+}
+
+.scrolling-heading:nth-child(3) {
+    animation-delay: 4s;
+    /* Third heading starts after 4 seconds */
+}
+
+.scrolling-heading:nth-child(4) {
+    animation-delay: 6s;
+    /* Fourth heading starts after 6 seconds */
+}
+
+.scrolling-heading:nth-child(5) {
+    animation-delay: 8s;
+    /* Fifth heading starts after 8 seconds */
+}
+
+.scrolling-heading:nth-child(6) {
+    animation-delay: 10s;
+    /* Sixth heading starts after 10 seconds */
+}
+
+/* Ensure smooth transitions and prevent overlaps */
+.scrolling-heading:nth-child(n) {
+    animation-fill-mode: forwards;
+    /* Keep the last state of animation */
+}
+
+.head {
+    color: #96d943;
+}
+
+.money {
+    text-decoration: line-through;
+}
+
+.free {
+    color: #96d943;
+}
+
+.button1 {
+    font-weight: bold;
+    width: 300px;
+}
+
+.button2 {
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+    width: 300px;
+}
+
+.para {
+    font-weight: bold;
+    color: white;
+}
+
+.bg {
+    background-color: #0f172a;
+    height: 550px;
+}
+
+.heading2 {
+    padding-top: 100px;
+}
+
+
+/* Reset default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Reset default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Reset default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Reset default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Container for the scrolling strip */
+.scrolling-container {
+    width: 100%;
+    /* Full width */
+    margin-top: 50px;
+    overflow: hidden;
+    /* Hide overflow */
+    background-color: transparent;
+    /* Background color */
+    position: relative;
+    /* Position relative for child positioning */
+}
+
+/* Inner container for scrolling content */
+.scrolling-content {
+    display: flex;
+    /* Use flexbox for horizontal alignment */
+    animation: scroll 10s linear infinite;
+    /* Animation for scrolling */
+}
+
+/* Wrapper for logos */
+.logo-wrapper {
+    display: flex;
+    /* Use flexbox for horizontal alignment */
+}
+
+/* Individual company logo styling */
+.company-logo {
+    padding: 10px;
+    /* Spacing around logos */
+}
+
+/* Company logo image styling */
+.company-logo img {
+    max-height: 50px;
+    /* Set a max height for images */
+    width: auto;
+}
+
+/* Animation keyframes for scrolling */
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+        /* Start from the left */
+    }
+
+    100% {
+        transform: translateX(-50%);
+        /* Move to the left */
+    }
+}
+
+.background {
+    background-color: #1e293b;
+    background-image: url("https://cdn.prod.website-files.com/64362e9…/64362e9…_A%20Rare%20Collection%20of%20Insider%20%20Knowledge%2C%20All%20Yours!%20(1\0");
+    background-position: 50%;
+    padding: 50px;
+    background-size: cover;
+}
+
+.h2 {
+    color: #f1f5f9;
+    text-align: center;
+    font-family: "Sans-Serif";
+    font-size: 48px;
+    margin-top: 80px;
+    font-weight: 700;
+    line-height: 72px
+}
+
+.all {
+    color: #cbd5e1;
+    text-align: center;
+    margin-top: 24px;
+    font-family: "sans-serif";
+    font-size: 18px;
+
+}
+
+.b1 {
+    color: white;
+    margin-right: 10px;
+    border-radius: 20px;
+}
+
+
+
+.bgempower {
+    background-image: url("https://cdn.prod.website-files.com/64362e90abbff481a6d25ce8/64362e90abbff4e843d25fd4_NxtWave's%20Empowering%20Podcast%20Series%20%20to%20Shape%20your%20Dream%20Career.%20(1).png");
+    background-color: #0f172a;
+    background-position: 50%;
+    background-size: cover;
+    padding: 96px 110px;
+}
+
+.emhead {
+    width: 900px;
+    height: 144px;
+    margin-top: 0;
+    margin-bottom: 48px;
+    font-family: Satoshi, sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 72px;
+    color: white;
+}
+
+.podcast {
+    color: #e2e8f0;
+    font-family: Inter, sans-serif;
+    font-size: 24px;
+    line-height: 32px;
+    margin-top: 13px;
+}
+
+.imagem {
+    height: 60px;
+}
+
+.buttonem {
+    margin-top: 40px;
+    color: #fff;
+    text-align: center;
+    background-color: #2563eb;
+    border-radius: 8px;
+    width: 400px;
+    height: 44px;
+    font-family: Inter, sans-serif;
+    font-weight: 500;
+}
+
+.bgclaim {
+    background-color: #0f172a;
+    padding-left: 70px;
+    padding-top: 100px;
+    height: 70vh;
+}
+
+.claimh {
+    color: rgba(241, 245, 249);
+    font-weight: 700;
+    font-size: 48px;
+
+    font-family: "Satoshi variable", sans-serif;
+}
+
+.name {
+    color: rgb(226, 232, 240);
+}
+
+#name {
+    width: 400px;
+    background-color: rgb(51, 65, 85);
+    border-radius: 10px;
+    border-style: solid;
+
+    border-width: 2px;
+    border-color: rgb(71, 85, 105);
+}
+
+.otp {
+    width: 400px;
+    border-radius: 10px;
+}
+
+.bgspeaker {
+    background-image: url("https://cdn.prod.website-files.com/64362e90abbff481a6d25ce8/645345c7c2106e1bd1c65a6c_Background%20String.png");
+    background-size: cover;
+    max-width: 1200px;
+
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+
+.text-block {
+
+    color: #fff;
+    font-family: Inter, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.bgend {
+    background-color: #0f172a;
+    padding-top: 96px;
+    padding-left: 50px;
+    padding-bottom: 96px;
+    font-family: Inter, sans-serif;
+}
+
+.reach {
+    color: #5a7184;
+    margin-top: 50px;
+    font-family: Inter, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.mail {
+    color: #5a7184;
+}
+
+.quicklinks {
+    color: #5a7184;
+    text-align: left;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    text-decoration: none;
+    margin-bottom: 25px;
+}
+
+.ul {
+    color: #5a7184;
+    list-style-type: none;
+}
+
+.link {
+    color: #5a7184;
+
+}
+
+.link-list {
+    margin-bottom: 12px;
+    transition: opacity .2s;
+
+}
+
+.payments {
+    margin-left: 100px;
+}
+
+.paap {
+    margin-right: 15px;
+}
+
+.location {
+    opacity: .7;
+    color: #959ead;
+    width: 232px;
+    height: 120px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px
+}
+
+.hline {
+    background-color: #1e293b;
+    border-radius: 2px;
+    height: 2px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    margin-right: 60px;
+}
+
+.policy {
+    opacity: .5;
+    color: #5a7184;
+    text-align: right;
+    width: auto;
+    margin-right: 70px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    transition: opacity .2s;
+}
